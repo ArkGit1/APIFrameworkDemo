@@ -18,7 +18,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import junit.framework.Assert;
 import utilities.JsonPaths;
-import utilities.Library;
+import utilities.ApiLibrary;
 import utilities.PostReqVehicleDetails;
 
 public class vehicleDetailsSteps {
@@ -76,7 +76,7 @@ public class vehicleDetailsSteps {
 	@Then("^response of \"([^\"]*)\" map should be matched with the following$")
 	public void response_of_map_should_be_matched_with_the_following(String node, DataTable table) throws Throwable {
 
-		Library.responseMapValidator(node, table, response);
+		ApiLibrary.responseMapValidator(node, table, response);
 	}
 	
 	@Then("^error response code and message should be the following$")
