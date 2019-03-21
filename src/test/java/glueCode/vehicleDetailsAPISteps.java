@@ -21,7 +21,7 @@ import utilities.JsonPaths;
 import utilities.ApiLibrary;
 import utilities.PostReqVehicleDetails;
 
-public class vehicleDetailsSteps {
+public class vehicleDetailsAPISteps {
 
 	private Response response;
 	private RequestSpecification request;
